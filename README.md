@@ -1,6 +1,9 @@
 # Task_manager_assignment
 # Task Manager
 
+Check out the live demo of the project [here](https://vksrinivas77.github.io/Task_manager_assignment/front-end/index.html).
+# Task Manager
+
 This is a simple Task Manager web application that allows users to add, edit, delete, and search for tasks. The application uses a PHP backend to handle API requests and a frontend built with HTML, CSS, and JavaScript.
 
 ## Features
