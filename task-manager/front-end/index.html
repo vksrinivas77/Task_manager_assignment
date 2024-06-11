@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Task Manager</h1>
+        <h2>Tasks</h2>
+        <div id="task-list"> 
+            <ul id="tasks"></ul>
+            <p id="no-tasks-message" style="display: none;font-weight: bold;text-align: center;">no task at this moment</p>
+        </div>
+        <button id="add-task-btn" onclick="toggleTaskForm()">Add Task</button>
+        <button id="search-task-btn" onclick="searchTask()">Search</button>
+        <div id="search-task" style="display: none;">
+            <h2>Search Task</h2>
+            <label for="search-id">Enter Task ID:</label><br>
+            <input type="text" id="search-id" placeholder="Enter task ID"><br><br>
+            <button id="search-btn" onclick="searchTaskById()">Search</button>
+            <p id="search-result" style="display: none;"></p>
+        </div>
+        <div id="task-form" style="display: none;">
+            <h2>Add Task</h2>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" placeholder="Enter title"><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" placeholder="Enter description"></textarea><br>
+            <label for="due_date">Due Date:</label><br>
+            <input type="date" id="due_date"><br><br>
+            <button id="submit-task-btn" onclick="handleTask()">Submit</button>
+              
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
